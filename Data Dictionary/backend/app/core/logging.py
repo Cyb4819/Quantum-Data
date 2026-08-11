@@ -24,4 +24,3 @@ except Exception:
         if not logger.handlers:
             logger.addHandler(handler)
         logger.setLevel(numeric_level)
-
