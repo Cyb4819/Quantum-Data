@@ -1,24 +1,13 @@
 from __future__ import annotations
-
 import os
-from typing import Any
-
 from app.ai.groq_client import GroqClient
-from app.config import settings
-
-# avoid importing langchain at all; we handle text composition ourselves
-
 
 
 class LangChainPipeline:
     def __init__(self, groq_client: GroqClient | None = None):
-        # allow caller to inject a client for testing; otherwise create default
         self.groq = groq_client or GroqClient()
 
     async def summarize_table(self, table_schema: dict) -> str:
-        """Compose a payload of schema and sample data and send to Groq."""
-
-        # gather text (schema plus sample file)
         text = str(table_schema)
         sample_path = os.path.join(
             os.path.dirname(__file__),
@@ -35,6 +24,31 @@ class LangChainPipeline:
             except Exception:
                 pass
 
-        # call groq client directly
         return await self.groq.generate_summary(text)
 
+    async def analyze_request(self, schema, user_message):
+        prompt = f"""
+        You are an intelligent data dictionary assistant.
+        
+        Determine what the user wants:
+        SCHEMA = questions about databases, tables, columns, relationships, metadata, structure, definitions, or schema.
+        QUERY = questions requiring actual data from the database.
+        MIXED = requires both schema information and actual database data.
+        
+        Return ONLY valid JSON:
+        {{
+            "intent": "SCHEMA | QUERY | MIXED",
+            "sql": null,
+            "response": "brief conversational response"
+            }}
+            
+        If intent is QUERY or MIXED, generate the SQL query.
+        If intent is SCHEMA, sql must be null.
+        
+        Database schema:
+        {schema}
+        
+        User question:
+        {user_message}
+"""
+        return await self.groq.generate_summary(prompt)

@@ -5,11 +5,11 @@ from app.main import app
 
 @pytest.mark.asyncio
 async def test_ai_query_endpoint(monkeypatch):
-    # stub GroqClient to avoid real HTTP call
     async def fake_generate(self, text: str) -> str:
         return "stubbed:" + text[:20]
 
     from app.ai.groq_client import GroqClient
+
     monkeypatch.setattr(GroqClient, "generate_summary", fake_generate)
 
     async with AsyncClient(app=app, base_url="http://test") as ac:

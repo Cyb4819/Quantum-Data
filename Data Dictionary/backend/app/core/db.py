@@ -11,7 +11,6 @@ def init_db():
     global ENGINE, SessionLocal
     db_url = settings.DATABASE_URL
     if not db_url:
-        # Build from individual parts if provided
         user = settings.POSTGRES_USER or ""
         pwd = settings.POSTGRES_PASSWORD or ""
         host = settings.POSTGRES_HOST or "localhost"

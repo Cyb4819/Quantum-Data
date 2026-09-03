@@ -2,23 +2,21 @@
 
 import dynamic from "next/dynamic";
 import useChatStore from "@/app/hooks/useChatStore";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ColourfulText from "@/components/ui/colourful-text";
-import { ChatRequestOptions, generateId } from "ai";
+import { ChatRequestOptions, generateId, JSONValue } from "ai";
 import { Message, useChat } from "ai/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { toast } from "sonner";
 import Header from "../landing/Header";
-// Import the PlaceholdersAndVanishInput dynamically with SSR disabled
 const PlaceholdersAndVanishInput = dynamic(
-  () => import("../ui/placeholders-and-vanish-input").then((mod) => mod.PlaceholdersAndVanishInput),
-  { ssr: false }
+  () =>
+    import("../ui/placeholders-and-vanish-input").then(
+      (mod) => mod.PlaceholdersAndVanishInput,
+    ),
+  { ssr: false },
 );
 import ChatBottombar from "./chat-bottombar";
 import ChatList from "./chat-list";
@@ -41,6 +39,7 @@ export default function Chat({ initialMessages, id }: ChatProps) {
     setInput,
     reload,
     addToolResult,
+    data,
   } = useChat({
     id,
     initialMessages,
@@ -50,15 +49,42 @@ export default function Chat({ initialMessages, id }: ChatProps) {
       }
     },
     onFinish: (message) => {
+      const queryResult = dataRef.current.findLast(
+        (item) =>
+          typeof item === "object" &&
+          item !== null &&
+          !Array.isArray(item) &&
+          "type" in item &&
+          item.type === "query-result",
+      );
+
+      const assistantMessage = {
+        ...message,
+        ...(queryResult
+          ? {
+              queryResult,
+            }
+          : {}),
+      };
+
+      setMessages((currentMessages) =>
+        currentMessages.map((m) =>
+          m.id === message.id ? assistantMessage : m,
+        ),
+      );
+
       const savedMessages = getMessagesById(id);
-      saveMessages(id, [...savedMessages, message]);
+
+      saveMessages(id, [...savedMessages, assistantMessage]);
       setLoadingSubmit(false);
+
+      dataRef.current = [];
+
       router.replace(`/c/${id}`);
     },
     onError: (error) => {
       setLoadingSubmit(false);
       console.error("Chat error:", error.message, error.cause);
-      // Show the error to the user, e.g. via a toast notification
       toast.error(`Error: ${error.message}`);
     },
     onToolCall: (tool) => {
@@ -71,6 +97,14 @@ export default function Chat({ initialMessages, id }: ChatProps) {
       }
     },
   });
+  const dataRef = React.useRef<JSONValue[]>([]);
+
+  React.useEffect(() => {
+    if (data) {
+      dataRef.current = data;
+    }
+  }, [data]);
+
   const [loadingSubmit, setLoadingSubmit] = React.useState(false);
   const saveMessages = useChatStore((state) => state.saveMessages);
   const getMessagesById = useChatStore((state) => state.getMessagesById);
@@ -79,12 +113,13 @@ export default function Chat({ initialMessages, id }: ChatProps) {
   const isToolInProgress = messages.some(
     (m: Message) =>
       m.role === "assistant" &&
-      m.toolInvocations?.some((tool) => !("result" in tool))
+      m.toolInvocations?.some((tool) => !("result" in tool)),
   );
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     window.history.replaceState({}, "", `/c/${id}`);
+    dataRef.current = [];
 
     const userMessage: Message = {
       id: generateId(),
@@ -134,7 +169,8 @@ export default function Chat({ initialMessages, id }: ChatProps) {
                 Talk with your <ColourfulText text="Data" />
               </h1>
               <p className="font-normal text-lg text-muted-foreground tracking-normal mt-4 mb-8 max-w-xl mx-auto text-center">
-                Query, analyse, and unlock insights with natural language. <br /> AI-powered SQL agent for effortless data exploration.
+                Query, analyse, and unlock insights with natural language.{" "}
+                <br /> AI-powered SQL agent for effortless data exploration.
               </p>
             </div>
             {/* Bottom section: avatar, text and input */}
@@ -181,6 +217,7 @@ export default function Chat({ initialMessages, id }: ChatProps) {
             reload={async () => {
               removeLatestMessage();
 
+              dataRef.current = [];
               const requestOptions: ChatRequestOptions = {
                 body: {},
               };

@@ -3,6 +3,7 @@ from app.connectors.base import BaseConnector
 from app.core.errors import ConnectorError
 from app.config import settings
 
+
 class MySQLConnector(BaseConnector):
     def __init__(self, host=None, user=None, password=None, database=None, port=3306):
         self.host = host or settings.MYSQL_HOST or "localhost"
@@ -22,7 +23,7 @@ class MySQLConnector(BaseConnector):
                 db=self.database,
                 minsize=5,
                 maxsize=10,
-                connect_timeout=5
+                connect_timeout=5,
             )
         except Exception as e:
             raise ConnectorError(f"MySQL connection failed: {str(e)}")
@@ -44,11 +45,14 @@ class MySQLConnector(BaseConnector):
             await self.connect()
         async with self.pool.acquire() as conn:
             async with conn.cursor(aiomysql.DictCursor) as cur:
-                await cur.execute(f"""
+                await cur.execute(
+                    f"""
                     SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE
                     FROM INFORMATION_SCHEMA.COLUMNS
                     WHERE TABLE_NAME = %s
-                """, (table_name,))
+                """,
+                    (table_name,),
+                )
                 cols = await cur.fetchall()
                 return {"columns": cols if cols else []}
 

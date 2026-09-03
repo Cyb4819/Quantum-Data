@@ -949,3 +949,730 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2026-02-22 09:20:16.811 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
 2026-02-22 09:28:53.176 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
 2026-02-22 09:28:55.654 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-12 04:11:20.030 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-12 04:11:20.031 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-12 04:11:20.033 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-12 04:11:33.931 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-12 04:11:33.932 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-12 04:11:33.933 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 16:06:42.703 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 404
+2026-08-13 16:06:44.042 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 404
+2026-08-13 16:08:41.435 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 405
+2026-08-13 16:14:30.823 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 405
+2026-08-13 16:16:20.741 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 405
+2026-08-13 16:18:17.690 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 16:18:17.695 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 16:18:17.979 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 400
+2026-08-13 16:18:17.983 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 400
+2026-08-13 16:20:22.245 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 16:20:22.254 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 17:07:16.794 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 17:07:16.799 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 17:07:16.896 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 17:07:16.899 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 17:07:50.759 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 17:07:50.760 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-13 17:07:50.762 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 17:07:50.764 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 17:08:06.891 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 17:08:06.892 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-13 17:08:06.894 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 17:08:06.896 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 19:38:04.674 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 19:38:04.703 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 19:38:04.832 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 19:38:04.836 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 19:38:32.537 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 19:38:32.539 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-13 19:38:32.543 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 19:38:32.552 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 19:41:57.007 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 19:41:57.009 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 19:42:11.642 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 19:42:11.643 | WARNING  | app.ai.groq_client:generate_summary:23 - GROQ_API_KEY not configured — using local stub summary
+2026-08-13 19:42:11.645 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 19:42:11.649 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:13:08.889 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 20:13:08.894 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 20:13:08.995 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:13:08.998 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:13:23.581 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 20:13:26.337 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:13:26.341 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:21:04.100 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:21:04.104 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:22:16.753 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:22:16.758 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:22:28.903 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 20:22:31.289 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:22:31.291 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:25:19.520 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 20:25:21.679 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:25:21.684 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:25:23.433 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 20:25:23.437 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-13 20:25:23.505 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:25:23.508 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-13 20:25:44.944 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-13 20:25:47.277 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-13 20:25:47.280 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:13:13.017 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-14 20:13:13.022 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-14 20:13:13.232 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-14 20:13:13.235 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-14 20:13:38.895 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-14 20:13:40.857 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:13:40.859 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:14:09.732 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-14 20:14:11.680 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:14:11.683 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:14:25.952 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-14 20:14:28.130 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-14 20:14:28.133 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 00:09:09.540 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-15 00:09:09.546 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-15 00:09:09.636 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-15 00:09:09.639 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-15 00:09:25.242 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-15 00:09:27.832 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 00:09:27.834 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 00:15:45.492 | DEBUG    | app.ai.groq_client:generate_summary:19 - GroqClient.generate_summary called
+2026-08-15 00:15:48.280 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 00:15:48.284 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 02:09:53.597 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-15 02:09:53.601 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-15 02:09:53.643 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-15 02:09:53.645 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-15 20:48:56.244 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-15 20:48:56.248 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-15 20:51:30.806 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-15 20:51:30.808 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-15 20:59:23.692 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-15 20:59:25.090 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 20:59:25.092 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 20:59:41.857 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-15 20:59:41.861 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-15 21:01:31.608 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-15 21:01:32.816 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 21:01:32.818 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 21:02:08.368 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-15 21:02:09.486 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 21:02:09.488 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 21:34:35.798 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-15 21:34:37.088 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-15 21:34:37.090 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-16 04:08:16.218 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-16 04:08:17.292 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-16 04:08:17.295 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-16 04:10:39.286 | INFO     | app.api.middleware:dispatch:64 - POST /api/db/connect 404
+2026-08-16 04:10:39.289 | INFO     | app.api.middleware:dispatch:64 - POST /api/db/connect 404
+2026-08-16 04:10:45.379 | INFO     | app.api.middleware:dispatch:64 - POST /api/db/connect 404
+2026-08-16 04:10:45.382 | INFO     | app.api.middleware:dispatch:64 - POST /api/db/connect 404
+2026-08-16 17:37:00.708 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 17:37:00.716 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 17:37:00.950 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:37:00.954 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:37:17.436 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-16 17:37:19.309 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-16 17:37:19.312 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 200
+2026-08-16 17:39:40.985 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 17:39:40.990 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 17:39:51.207 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:39:51.212 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:40:05.056 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 17:40:05.061 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 17:43:58.694 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:43:58.698 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 200
+2026-08-16 17:44:08.776 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 17:44:08.784 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 17:48:56.400 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 17:48:56.404 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 17:56:39.708 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 17:56:39.712 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 17:56:39.728 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 422
+2026-08-16 17:56:39.731 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 422
+2026-08-16 18:29:55.869 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 18:29:55.873 | INFO     | app.api.middleware:dispatch:64 - OPTIONS /api/ai/db/test-connection 200
+2026-08-16 18:29:55.884 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 404
+2026-08-16 18:29:55.890 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/db/test-connection 404
+2026-08-16 19:00:27.085 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:00:27.089 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:09:56.893 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 19:09:56.897 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 19:12:35.684 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:12:35.686 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:12:54.819 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:12:54.822 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:14:31.373 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:14:31.377 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:23:29.454 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:23:29.457 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 19:25:53.217 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:25:53.222 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:27:55.343 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:27:55.347 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:30:02.302 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:30:02.306 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:53:25.809 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 19:53:25.814 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:09:36.355 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:09:36.358 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:12:38.346 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:12:38.348 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:14:20.954 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:14:20.955 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:26:47.416 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:26:47.420 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 422
+2026-08-16 20:34:29.129 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:34:29.134 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:36:02.207 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:36:02.211 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:38:20.968 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:38:20.991 | INFO     | app.api.middleware:dispatch:64 - POST /api/ai/query 400
+2026-08-16 20:43:46.522 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 20:43:46.533 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 20:44:47.409 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 20:44:47.412 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 20:46:06.294 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 20:46:06.295 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:07:18.401 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:07:18.403 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:12:08.692 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:15:10.484 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:17:48.019 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:18:47.538 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:21:08.249 | ERROR    | app.api.middleware:dispatch:67 - Request error: 
+2026-08-16 21:26:56.832 | ERROR    | app.api.middleware:dispatch:56 - Request error: 
+2026-08-16 21:40:33.029 | ERROR    | app.api.middleware:dispatch:56 - Request error: 
+2026-08-17 02:05:21.987 | ERROR    | app.api.middleware:dispatch:56 - Request error: 
+2026-08-17 02:10:59.992 | ERROR    | app.api.middleware:dispatch:56 - Request error
+Traceback (most recent call last):
+
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 78, in call_next
+    message = await recv_stream.receive()
+                    │           └ <function MemoryObjectReceiveStream.receive at 0x0000024DFD3F47C0>
+                    └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\anyio\streams\memory.py", line 98, in receive
+    return self.receive_nowait()
+           │    └ <function MemoryObjectReceiveStream.receive_nowait at 0x0000024DFD3F4720>
+           └ MemoryObjectReceiveStream(_state=MemoryObjectStreamState(max_buffer_size=0, buffer=deque([]), open_send_channels=0, open_rece...
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\anyio\streams\memory.py", line 91, in receive_nowait
+    raise EndOfStream
+          └ <class 'anyio.EndOfStream'>
+
+anyio.EndOfStream
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 380
+               │     └ 3
+               └ <function _main at 0x0000024DFAF514E0>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 380
+           │    └ <function BaseProcess._bootstrap at 0x0000024DFAE43A60>
+           └ <SpawnProcess name='SpawnProcess-3' parent=5944 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x0000024DFAE42FC0>
+    └ <SpawnProcess name='SpawnProcess-3' parent=5944 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x0000024DFAF0E690>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-3' parent=5944 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-3' parent=5944 started>
+    │    └ <function subprocess_started at 0x0000024DFD2FD1C0>
+    └ <SpawnProcess name='SpawnProcess-3' parent=5944 started>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=492, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x0000024DFD40CB90>>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=492, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x0000024DFD2FC900>
+           │       │   └ <uvicorn.server.Server object at 0x0000024DFD40CB90>
+           │       └ <function run at 0x0000024DFA9F0680>
+           └ <module 'asyncio' from 'C:\\Python312\\Lib\\asyncio\\__init__.py'>
+  File "C:\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x0000024DFD20D140>
+           │      └ <function Runner.run at 0x0000024DFCBDC4A0>
+           └ <asyncio.runners.Runner object at 0x0000024DFAF0EA20>
+  File "C:\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Di...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000024DFCBDA0C0>
+           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000024DFAF0EA20>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000024DFCBDA020>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000024DFCBDBE20>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000024DFCB0E3E0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000024D8E95A350>()>
+  File "C:\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000024D8E95A350>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000024D8E95A350>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000024D8E95A350>()>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000024D8E673230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024D8E...
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000024D8E90E480>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000024D8E673230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024D8E...
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024D8E...
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000024D8E90E090>
+          └ <fastapi.applications.FastAPI object at 0x0000024D8E90E480>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000024D8E92BF60>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000024...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.api.middleware.LoggingMiddleware object at 0x0000024D8E90E510>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000024D8E90E090>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x0000024D8E92BBA0>
+                     │    │             └ <starlette.requests.Request object at 0x0000024D8E934350>
+                     │    └ <bound method LoggingMiddleware.dispatch of <app.api.middleware.LoggingMiddleware object at 0x0000024D8E90E510>>
+                     └ <app.api.middleware.LoggingMiddleware object at 0x0000024D8E90E510>
+
+> File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\app\api\middleware.py", line 52, in dispatch
+    response = await call_next(request)
+                     │         └ <starlette.requests.Request object at 0x0000024D8E934350>
+                     └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x0000024D8E92BBA0>
+
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 84, in call_next
+    raise app_exc
+          └ NotImplementedError()
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 70, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+          │    │   │      │                      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x0000024D8E96D8A0>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000024D8E96D1C0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000024DFF84E870>
+          └ <app.api.middleware.LoggingMiddleware object at 0x0000024D8E90E510>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.send_no_error at 0x0000024D8E96D8A0>
+          │    │   │      └ <function BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.receive_or_disconnect at 0x0000024D8E96D1C0>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <app.main.MaxBodySizeMiddleware object at 0x0000024DFF9CB470>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000024DFF84E870>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 108, in __call__
+    response = await self.dispatch_func(request, call_next)
+                     │    │             │        └ <function BaseHTTPMiddleware.__call__.<locals>.call_next at 0x0000024D8E96DBC0>
+                     │    │             └ <starlette.requests.Request object at 0x0000024D8E95A330>
+                     │    └ <bound method BaseHTTPMiddleware.dispatch of <app.main.MaxBodySizeMiddleware object at 0x0000024DFF9CB470>>
+                     └ <app.main.MaxBodySizeMiddleware object at 0x0000024DFF9CB470>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 115, in dispatch
+    raise NotImplementedError()  # pragma: no cover
+
+NotImplementedError
+2026-08-17 02:15:11.091 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 422
+2026-08-17 02:17:43.618 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 422
+2026-08-17 02:19:41.552 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-17 02:19:42.907 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 200
+2026-08-17 02:22:21.894 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 422
+2026-08-17 02:26:34.186 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 422
+2026-08-17 02:30:07.504 | INFO     | app.api.middleware:dispatch:53 - POST /api/ai/query 422
+2026-08-17 02:34:39.929 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-17 02:40:41.969 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 17:49:35.480 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 17:49:37.353 | ERROR    | app.api.routes.ai:query:107 - Error in /query: name 'json' is not defined
+Traceback (most recent call last):
+
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\app\api\routes\ai.py", line 95, in query
+    #         try:
+
+NameError: name 'json' is not defined. Did you forget to import 'json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 384
+               │     └ 3
+               └ <function _main at 0x0000019143FC14E0>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 384
+           │    └ <function BaseProcess._bootstrap at 0x0000019143EB3A60>
+           └ <SpawnProcess name='SpawnProcess-3' parent=16360 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x0000019143EB2FC0>
+    └ <SpawnProcess name='SpawnProcess-3' parent=16360 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x0000019143F7E690>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-3' parent=16360 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-3' parent=16360 started>
+    │    └ <function subprocess_started at 0x00000191463DD1C0>
+    └ <SpawnProcess name='SpawnProcess-3' parent=16360 started>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket [closed] fd=-1, family=2, type=1, proto=6>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000191464CCA40>>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket [closed] fd=-1, family=2, type=1, proto=6>]
+           │       │   │    └ <function Server.serve at 0x00000191463DC900>
+           │       │   └ <uvicorn.server.Server object at 0x00000191464CCA40>
+           │       └ <function run at 0x0000019143A60680>
+           └ <module 'asyncio' from 'C:\\Python312\\Lib\\asyncio\\__init__.py'>
+  File "C:\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x00000191462FD140>
+           │      └ <function Runner.run at 0x0000019145CCC4A0>
+           └ <asyncio.runners.Runner object at 0x000001914633FFE0>
+  File "C:\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Di...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000019145CCA0C0>
+           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001914633FFE0>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000019145CCA020>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000019145CCBE20>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000019145BFE3E0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019157966E90>()>
+  File "C:\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019157966E90>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019157966E90>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019157966E90>()>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000019156A3F230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019157...
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x000001915791C170>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000019156A3F230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019157...
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019157...
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000019156D26D80>
+          └ <fastapi.applications.FastAPI object at 0x000001915791C170>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000019157930400>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000019156F8D1F0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000019156D26D80>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000019157932C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x0000019156A02A50>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000019156F8D1F0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000019157932C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x000001915791C260>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x0000019156A02A50>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000019157932C00>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x0000019148450AE0>
+          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000019157932C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x0000019157930C20>
+          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x00000191464235F0>
+                     └ <function get_request_handler.<locals>.app at 0x0000019157930EA0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000019148451BC0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'fetch 4 customers'}, {'role': 'user', 'content': 'fetch 6 custome...
+                 │         └ <function query at 0x000001915772D1C0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x000001915791DF70>
+
+> File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\app\api\routes\ai.py", line 96, in query
+    #             result = json.loads(result)
+
+NameError: name 'json' is not defined. Did you forget to import 'json'
+2026-08-20 17:55:54.604 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 17:56:17.918 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 17:58:03.700 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 17:58:05.549 | ERROR    | app.api.routes.ai:query:108 - Error in /query: name 'json' is not defined
+Traceback (most recent call last):
+
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\app\api\routes\ai.py", line 96, in query
+    result = json.loads(result)
+                        └ '{\n  "intent": "QUERY",\n  "sql": "SELECT * FROM olist_customers_dataset LIMIT 8;",\n  "response": "Here are 8 customers fro...
+
+NameError: name 'json' is not defined. Did you forget to import 'json'
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 388
+               │     └ 3
+               └ <function _main at 0x0000023B2ADB14E0>
+  File "C:\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 388
+           │    └ <function BaseProcess._bootstrap at 0x0000023B2ACA3A60>
+           └ <SpawnProcess name='SpawnProcess-10' parent=16360 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x0000023B2ACA2FC0>
+    └ <SpawnProcess name='SpawnProcess-10' parent=16360 started>
+  File "C:\Python312\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x0000023B2AD6E660>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-10' parent=16360 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-10' parent=16360 started>
+    │    └ <function subprocess_started at 0x0000023B2D1AD1C0>
+    └ <SpawnProcess name='SpawnProcess-10' parent=16360 started>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=408, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x0000023B2D2BC890>>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=408, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x0000023B2D1AC900>
+           │       │   └ <uvicorn.server.Server object at 0x0000023B2D2BC890>
+           │       └ <function run at 0x0000023B2A8E0680>
+           └ <module 'asyncio' from 'C:\\Python312\\Lib\\asyncio\\__init__.py'>
+  File "C:\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Server.serve at 0x0000023B2D0AD140>
+           │      └ <function Runner.run at 0x0000023B2CA3C4A0>
+           └ <asyncio.runners.Runner object at 0x0000023B2AD6E690>
+  File "C:\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Di...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000023B2CA3A0C0>
+           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000023B2AD6E690>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000023B2CA3A020>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000023B2CA3BE20>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+  File "C:\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000023B2C95E3E0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000023B3E7172E0>()>
+  File "C:\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000023B3E7172E0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000023B3E7172E0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000023B3E7172E0>()>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000023B3E35B230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023B3E...
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x0000023B3E6C9160>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000023B3E35B230>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1106, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023B3E...
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023B3E...
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000023B3D8F6960>
+          └ <fastapi.applications.FastAPI object at 0x0000023B3E6C9160>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000023B2D2C44A0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000023B3D9716D0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000023B3D8F6960>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000023B3E6E2C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x0000023B2D2BD280>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000023B3D9716D0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000023B3E6E2C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x0000023B3E6C8650>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x0000023B2D2BD280>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000023B3E6E2C00>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x0000023B2F290AE0>
+          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x0000023B3E6E2C00>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000023...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x0000023B3E6E0C20>
+          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x0000023B3E6F22A0>
+                     └ <function get_request_handler.<locals>.app at 0x0000023B3E6E0EA0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000023B2F291BC0>
+  File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\.venv\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'fetch 8 customers'}], schema=[{'password': '*****', 'driverClassN...
+                 │         └ <function query at 0x0000023B3E56D1C0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x0000023B3E6C8DD0>
+
+> File "C:\Users\DeLL\Documents\Intelligent-Data-Dictionary-Agent\Data Dictionary\backend\app\api\routes\ai.py", line 97, in query
+    except json.JSONDecodeError as e:
+                                   └ NameError("name 'json' is not defined")
+
+NameError: name 'json' is not defined. Did you forget to import 'json'
+2026-08-20 17:59:15.500 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 18:09:04.195 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:22:44.318 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:25:55.776 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:26:21.433 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:29:03.797 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:32:54.358 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:33:20.699 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:34:43.773 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:43:10.257 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 19:47:02.862 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:01:41.245 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:07:32.513 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:07:58.378 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:32:30.404 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:34:31.319 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:38:47.152 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:40:24.102 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-20 20:42:41.293 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:21:48.726 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:22:06.485 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:27:49.076 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:29:00.360 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:31:06.712 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:37:49.134 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:38:18.955 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:45:11.042 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:45:21.105 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:51:20.908 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:51:37.058 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:54:26.472 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:54:51.431 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 01:55:00.842 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 02:08:23.775 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 02:08:37.327 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:03:24.485 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:04:31.629 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:04:53.727 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:13:23.486 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:14:00.022 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:14:40.076 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:20:55.417 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-21 03:21:20.929 | DEBUG    | app.ai.groq_client:generate_summary:18 - GroqClient.generate_summary called
+2026-08-22 01:34:29.090 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 01:34:56.780 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 03:32:01.520 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 03:56:54.935 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:00:11.010 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:08:46.691 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:08:55.684 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:14:41.673 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:15:15.754 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-22 04:15:23.857 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-08-23 23:07:50.443 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called

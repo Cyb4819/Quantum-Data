@@ -7,10 +7,20 @@ interface ChatSession {
 	createdAt: string;
 }
 
+interface DatabaseConfig {
+	dbType: string;
+	host: string;
+	port: number;
+	user: string;
+	password: string;
+	database: string;
+}
+
 interface State {
 	chats: Record<string, ChatSession>;
 	currentChatId: string | null;
 	userName: string | "Elong Musk";
+	selectedDatabase: DatabaseConfig | null;
 }
 
 interface Actions {
@@ -20,6 +30,8 @@ interface Actions {
 	saveMessages: (chatId: string, messages: Message[]) => void;
 	handleDelete: (chatId: string, messageId?: string) => void;
 	setUserName: (userName: string) => void;
+	setSelectedDatabase: (config: DatabaseConfig | null) => void;
+	getSelectedDatabase: () => DatabaseConfig | null;
 }
 
 const useChatStore = create<State & Actions>()(
@@ -27,9 +39,13 @@ const useChatStore = create<State & Actions>()(
 		(set, get) => ({
 			chats: {},
 			currentChatId: null,
-			userName: "Elon Musk",
+			userName: "Harsh",
+			selectedDatabase: null,
 
 			setUserName: (userName) => set({ userName }),
+
+			setSelectedDatabase: (config) => set({ selectedDatabase: config }),
+			getSelectedDatabase: () => get().selectedDatabase,
 
 			setCurrentChatId: (chatId) => set({ currentChatId: chatId }),
 			getChatById: (chatId) => {
@@ -91,7 +107,7 @@ const useChatStore = create<State & Actions>()(
 				chats: state.chats,
 				currentChatId: state.currentChatId,
 				userName: state.userName,
-			}),
+				}),
 		}
 	)
 );

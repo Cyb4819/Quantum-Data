@@ -27,7 +27,6 @@ def save_markdown_for_table(table_name: str, schema: dict) -> str:
         f.write("| Column | Data Type | Nullable |\n")
         f.write("|---|---:|---:|\n")
         for c in cols:
-            # support different shapes of column info
             name = c.get("column_name") or c.get("name") or str(c.get(0, ""))
             dtype = c.get("data_type") or c.get("type") or ""
             nullable = c.get("is_nullable") or c.get("nullable") or ""

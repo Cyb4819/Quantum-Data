@@ -1,8 +1,7 @@
 from typing import Any, Dict, List
 
-class BaseConnector:
-    """Abstract connector. Implementations must provide async connect and metadata methods."""
 
+class BaseConnector:
     async def connect(self) -> Any:
         raise NotImplementedError()
 

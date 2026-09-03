@@ -17,7 +17,7 @@ export default function CodeDisplayBlock({ code }: ButtonCodeblockProps) {
 
   const filteredCode = useMemo(
     () => code.split("\n").slice(1).join("\n") || code,
-    [code]
+    [code],
   );
   const trimmedCode = useMemo(() => filteredCode.trim(), [filteredCode]);
   const language = useMemo(
@@ -25,17 +25,17 @@ export default function CodeDisplayBlock({ code }: ButtonCodeblockProps) {
       ["tsx", "js", "python", "css", "html", "cs"].includes(code.split("\n")[0])
         ? code.split("\n")[0]
         : "tsx",
-    [code]
+    [code],
   );
 
   const customStyle = useMemo(
     () =>
       theme === "dark" ? { background: "#303033" } : { background: "#fcfcfc" },
-    [theme]
+    [theme],
   );
   const codeTheme = useMemo(
     () => (theme === "dark" ? dracula : github),
-    [theme]
+    [theme],
   );
 
   const copyToClipboard = () => {
