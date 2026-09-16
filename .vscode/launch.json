@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DataDictionaryAgentApplication<data-dictionary-agent>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hackfest_2.data_dictionary_agent.DataDictionaryAgentApplication",
+            "projectName": "data-dictionary-agent",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "password" : "*****",
+  "driverClassName" : "org.postgresql.Driver",
+  "tablesList" : [ {
+    "tableType" : "TABLE",
+    "foreignKeys" : [ ],
+    "primaryKeys" : [ "customer_id" ],
+    "columns" : [ {
+      "size" : 50,
+      "nullable" : false,
+      "defaultValue" : null,
+      "dataType" : "varchar",
+      "autoIncrement" : "NO",
+      "isUnique" : true,
+      "ordinalPosition" : 1,
+      "columnName" : "customer_id"
+    }, {
+      "size" : 50,
+      "nullable" : true,
+      "defaultValue" : null,
+      "dataType" : "varchar",
+      "autoIncrement" : "NO",
+      "isUnique" : false,
+      "ordinalPosition" : 2,
+      "columnName" : "customer_unique_id"
+    }, {
+      "size" : 10,
+      "nullable" : true,
+      "defaultValue" : null,
+      "dataType" : "int4",
+      "autoIncrement" : "NO",
+      "isUnique" : false,
+      "ordinalPosition" : 3,
+      "columnName" : "customer_zip_code_prefix"
+    }, {
+      "size" : 100,
+      "nullable" : true,
+      "defaultValue" : null,
+      "dataType" : "varchar",
+      "autoIncrement" : "NO",
+      "isUnique" : false,
+      "ordinalPosition" : 4,
+      "columnName" : "customer_city"
+    }, {
+      "size" : 10,
+      "nullable" : true,
+      "defaultValue" : null,
+      "dataType" : "varchar",
+      "autoIncrement" : "NO",
+      "isUnique" : false,
+      "ordinalPosition" : 5,
+      "columnName" : "customer_state"
+    } ],
+    "rowCount" : 99441,
+    "tableName" : "olist_customers_dataset"
+  } ],
+  "connectionUrl" : "jdbc:postgresql://localhost:5432/postgres",
+  "userName" : "postgres"
+}
