@@ -1,4 +1,4 @@
-# Quantum Data — Data Dictionary
+# Quantum Data — Intelligent Data Dictionary Agent
 
 This repository contains a Next.js data-dictionary chat UI and two backend services:
 
