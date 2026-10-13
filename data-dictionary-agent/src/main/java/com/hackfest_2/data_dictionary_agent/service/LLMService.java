@@ -10,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
+import org.springframework.web.client.RestClientResponseException;
 
 @Service
 public class LLMService {
@@ -26,8 +27,9 @@ public class LLMService {
     this.objectMapper = objectMapper;
   }
 
-  public LLMQueryResponse analyze(Object schema, List<Map<String, Object>> messages) {
-    LLMQueryRequest request = new LLMQueryRequest(messages, schema);
+  public LLMQueryResponse analyze(
+      Object schema, List<Map<String, Object>> messages, String databaseType) {
+    LLMQueryRequest request = new LLMQueryRequest(messages, schema, databaseType, false);
 
     try {
       String json = objectMapper.writeValueAsString(request);
@@ -42,8 +44,9 @@ public class LLMService {
               .body(String.class);
 
       return objectMapper.readValue(rawResponse, LLMQueryResponse.class);
+    } catch (RestClientResponseException e) {
+      throw e;
     } catch (Exception e) {
-      e.printStackTrace();
       throw new RuntimeException("LLM request failed", e);
     }
   }

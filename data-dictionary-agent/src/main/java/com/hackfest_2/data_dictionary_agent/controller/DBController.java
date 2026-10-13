@@ -3,7 +3,6 @@ package com.hackfest_2.data_dictionary_agent.controller;
 import com.hackfest_2.data_dictionary_agent.dto.DBConnectionConfig;
 import com.hackfest_2.data_dictionary_agent.service.ConnectionManagerService;
 import com.hackfest_2.data_dictionary_agent.service.DBService;
-import java.sql.Connection;
 import java.util.Map;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +23,7 @@ public class DBController {
   @PostMapping("/connect")
   public Map<String, Object> connect(@RequestBody DBConnectionConfig dbConnectionConfig)
       throws Exception {
-    try (Connection ignored = dbService.connect(dbConnectionConfig)) {
+    try (AutoCloseable ignored = dbService.connect(dbConnectionConfig)) {
       connectionManagerService.setActiveConfig(dbConnectionConfig);
 
       return Map.of(

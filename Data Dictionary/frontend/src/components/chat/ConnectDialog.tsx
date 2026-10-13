@@ -101,20 +101,13 @@ export function AddDatabaseDialog() {
         };
 
     try {
-      const response = await fetch(
-        isMongo
-          ? "http://localhost:8000/api/extract/connect"
-          : isPostgres
-            ? "http://localhost:8000/api/extract/connect"
-          : "http://localhost:8081/api/db/connect",
-        {
+      const response = await fetch("/api/db/connect", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(config),
-        },
-      );
+      });
 
       const result = await response.json();
 
@@ -131,7 +124,7 @@ export function AddDatabaseDialog() {
         port: isMongo ? 27017 : parseInt(formData.port, 10),
         user: formData.user,
         password: formData.password,
-        database: isMongo ? "" : formData.database,
+        database: formData.database,
       };
 
       setSelectedDatabase(selectedConfig);

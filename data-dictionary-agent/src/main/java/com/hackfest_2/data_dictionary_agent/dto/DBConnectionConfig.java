@@ -6,6 +6,8 @@ import lombok.Data;
 public class DBConnectionConfig {
   private String type;
   private String url;
+  private String uri;
   private String username;
   private String password;
+  private String database;
 }

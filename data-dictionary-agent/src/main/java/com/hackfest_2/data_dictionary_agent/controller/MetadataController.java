@@ -15,8 +15,8 @@ public class MetadataController {
   }
 
   @PostMapping("/extract")
-  public List<Map<String, Object>> extractMetadata(@RequestBody List<Map<String, String>> sources) {
-
+  public List<Map<String, Object>> extractMetadata(
+      @RequestBody List<Map<String, String>> sources) throws Exception {
     return metadataService.extractFromMultipleSources(sources);
   }
 }

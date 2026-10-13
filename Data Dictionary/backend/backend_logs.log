@@ -1,1305 +1,213 @@
-2026-09-05 00:57:19.695 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-05 00:57:34.547 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:24:29.535 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:24:29.579 | ERROR    | app.api.routes.extract:extract_with_connection:97 - Error: No module named 'motor'
-2026-09-15 00:25:34.571 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:25:34.597 | ERROR    | app.api.routes.extract:extract_with_connection:97 - Error: No module named 'motor'
-2026-09-15 00:26:32.652 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:26:32.655 | ERROR    | app.api.routes.extract:extract_with_connection:97 - Error: No module named 'motor'
-2026-09-15 00:33:00.443 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:33:03.825 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 9 tables
-2026-09-15 00:33:51.827 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:40:59.528 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:41:01.252 | ERROR    | app.api.routes.extract:extract_with_connection:94 - Connector error: MongoDB connection failed: database names cannot contain the character ' '
-2026-09-15 00:41:26.266 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:41:27.509 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 9 tables
-2026-09-15 00:41:33.652 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:41:33.858 | ERROR    | app.api.routes.extract:extract_with_connection:94 - Connector error: MongoDB connection failed: database names cannot contain the character ' '
-2026-09-15 00:41:53.993 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:41:54.240 | ERROR    | app.api.routes.extract:extract_with_connection:94 - Connector error: MongoDB connection failed: database names cannot contain the character ' '
-2026-09-15 00:43:33.786 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:43:34.758 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 0 tables
-2026-09-15 00:43:45.963 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:43:46.931 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 0 tables
-2026-09-15 00:43:46.991 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:44:28.917 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:44:31.832 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 0 tables
-2026-09-15 00:44:31.850 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:47:30.335 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:48:05.682 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:48:06.547 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 0 tables
-2026-09-15 00:48:18.353 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (mongodb)
-2026-09-15 00:48:19.176 | INFO     | app.api.routes.extract:extract_with_connection:91 - Schema extraction completed: 0 tables
-2026-09-15 00:48:19.189 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:48:45.689 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:51:37.315 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:56:10.148 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:58:28.909 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 00:58:49.246 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:15:47.834 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:15:49.126 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 0 tables
-2026-09-15 01:16:01.542 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:16:03.084 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:16:03.115 | ERROR    | app.api.routes.ai:query:80 - Error in /query: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
+2026-10-12 19:16:23.318 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:23:45.635 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:25:44.616 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:26:05.313 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:26:23.351 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:26:33.556 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:26:42.338 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:26:43.112 | ERROR    | app.ai.groq_client:generate_summary:75 - Groq API error: %s %s
+2026-10-12 19:26:43.114 | ERROR    | app.api.routes.ai:query:124 - Error in /query: Client error '429 Too Many Requests' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
 Traceback (most recent call last):
 
   File "<string>", line 1, in <module>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
     exitcode = _main(fd, parent_sentinel)
-               │     │   └ 28
+               │     │   └ 368
                │     └ 3
-               └ <function _main at 0x00000199BDFCF4C0>
+               └ <function _main at 0x0000021AA21434C0>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
     return self._bootstrap(parent_sentinel)
-           │    │          └ 28
-           │    └ <function BaseProcess._bootstrap at 0x00000199BDED3920>
-           └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
+           │    │          └ 368
+           │    └ <function BaseProcess._bootstrap at 0x0000021AA1E33920>
+           └ <SpawnProcess name='SpawnProcess-1' parent=10448 started>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
     self.run()
-    │    └ <function BaseProcess.run at 0x00000199BDED2E80>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
+    │    └ <function BaseProcess.run at 0x0000021AA1E32E80>
+    └ <SpawnProcess name='SpawnProcess-1' parent=10448 started>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
     self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000199C03024E0>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x0000021AA1EF83B0>, 'target': <bound method Server.run of <uvicorn.server.Server...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=10448 started>
     │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-    │    └ <function subprocess_started at 0x00000199C0369940>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=10448 started>
+    │    └ <function subprocess_started at 0x0000021AA4320A40>
+    └ <SpawnProcess name='SpawnProcess-1' parent=10448 started>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
     target(sockets=sockets)
-    │              └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000199C047F4D0>>
+    │              └ [<socket.socket fd=484, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x0000021AA442F710>>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
     return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x00000199C0368E00>
-           │       │   └ <uvicorn.server.Server object at 0x00000199C047F4D0>
-           │       └ <function run at 0x00000199BFBB9260>
+           │       │   │    │             └ [<socket.socket fd=484, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x0000021AA4307EC0>
+           │       │   └ <uvicorn.server.Server object at 0x0000021AA442F710>
+           │       └ <function run at 0x0000021AA3B19260>
            └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x00000199C04B44A0>
-           │      └ <function Runner.run at 0x00000199BFC72C00>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
+           │      │   └ <coroutine object Server.serve at 0x0000021AA4423D80>
+           │      └ <function Runner.run at 0x0000021AA3BD2C00>
+           └ <asyncio.runners.Runner object at 0x0000021AA1EF8290>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
     return self._loop.run_until_complete(task)
            │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000199BFC70860>
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000021AA3BD0860>
            │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
+           └ <asyncio.runners.Runner object at 0x0000021AA1EF8290>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
     self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x00000199BFC707C0>
+    │    └ <function BaseEventLoop.run_forever at 0x0000021AA3BD07C0>
     └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
     self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x00000199BFC725C0>
+    │    └ <function BaseEventLoop._run_once at 0x0000021AA3BD25C0>
     └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
     handle._run()
-    │      └ <function Handle._run at 0x00000199BFBB47C0>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C3E90340>()>
+    │      └ <function Handle._run at 0x0000021AA3B147C0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000021AA7E36170>()>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
     self._context.run(self._callback, *self._args)
     │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C3E90340>()>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000021AA7E36170>()>
     │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C3E90340>()>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000021AA7E36170>()>
     │    └ <member '_context' of 'Handle' objects>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C3E90340>()>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000021AA7E36170>()>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
     result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000021AA795CF50>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
     return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C3...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021AA7...
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
                  │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
+                 │    └ <fastapi.applications.FastAPI object at 0x0000021AA7BF0E90>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000021AA795CF50>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
     await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C3...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021AA7...
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
                            └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
     await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C3...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021AA7...
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
-          └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000021AA7BF3170>
+          └ <fastapi.applications.FastAPI object at 0x0000021AA7BF0E90>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
     await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C58BAE80>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000021AA7E07060>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
+          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x0000021AA7BF3020>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x0000021AA7BF3170>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
     await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C58BAE80>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000021AA7E07060>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000021AA7BF3140>
+          └ <starlette.middleware.cors.CORSMiddleware object at 0x0000021AA7BF3020>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C58BAE80>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000021AA7E07060>
+          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x00000199C3E904D0>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
+          │                            │    │    └ <starlette.requests.Request object at 0x0000021AA7E1B890>
+          │                            │    └ <fastapi.routing.APIRouter object at 0x0000021AA7BF0530>
+          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x0000021AA7BF3140>
+          └ <function wrap_app_handling_exceptions at 0x0000021AA53CBB00>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
     await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66980>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E077E0>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
+          └ <fastapi.routing.APIRouter object at 0x0000021AA7BF0530>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
     await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66980>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E077E0>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000199C3E763F0>>
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
+          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x0000021AA7BF0530>>
+          └ <fastapi.routing.APIRouter object at 0x0000021AA7BF0530>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
     await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66980>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E077E0>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x00000199C252BF60>
+          │     └ <function Route.handle at 0x0000021AA53FCFE0>
           └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
     await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66980>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E077E0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x00000199C3E65BC0>
+          │    └ <function request_response.<locals>.app at 0x0000021AA7C18540>
           └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66980>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E077E0>
+          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x00000199C3E90830>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66A20>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
+          │                            │    └ <starlette.requests.Request object at 0x0000021AA7E1BA70>
+          │                            └ <function request_response.<locals>.app.<locals>.app at 0x0000021AA7E07740>
+          └ <function wrap_app_handling_exceptions at 0x0000021AA53CBB00>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
     await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C594FE20>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
+          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000021AA7E07600>
+          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000021...
           │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66A20>
+          └ <function request_response.<locals>.app.<locals>.app at 0x0000021AA7E07740>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
     response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x00000199C3E90830>
-                     └ <function get_request_handler.<locals>.app at 0x00000199C3E65B20>
+                     │    └ <starlette.requests.Request object at 0x0000021AA7E1BA70>
+                     └ <function get_request_handler.<locals>.app at 0x0000021AA7C184A0>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
     raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x00000199C252A200>
+                         └ <function run_endpoint_function at 0x0000021AA53CB2E0>
   File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
     return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'info about mail kasha.todd@yahoo.com'}], schema={'order_items': {...
-                 │         └ <function query at 0x00000199C3E0DD00>
-                 └ <fastapi.dependencies.models.Dependant object at 0x00000199C3E76000>
+                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'info about the client with email debra.burks@yahoo.com'}, {'role'...
+                 │         └ <function query at 0x0000021AA7BB1BC0>
+                 └ <fastapi.dependencies.models.Dependant object at 0x0000021AA7BF21E0>
 
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 36, in query
-    pipeline.analyze_mongodb_request(req.schema, user_message)
-    │                                │   │       └ 'info about mail kasha.todd@yahoo.com'
-    │                                │   └ {'order_items': {'columns': [{'column_name': '_id', 'data_type': 'ObjectId', 'is_nullable': 'YES'}, {'column_name': 'discount...
-    │                                └ QueryRequest(messages=[{'role': 'user', 'content': 'info about mail kasha.todd@yahoo.com'}], schema={'order_items': {'columns...
-    └ <app.ai.langchain_pipeline.LangChainPipeline object at 0x00000199C5ADD940>
+> File "C:\Users\somos\OneDrive\Documents\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 46, in query
+    result = await (
 
-AttributeError: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
-2026-09-15 01:16:28.282 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:17:27.561 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:17:28.746 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 0 tables
-2026-09-15 01:17:42.775 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:17:43.942 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:17:43.964 | ERROR    | app.api.routes.ai:query:80 - Error in /query: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
-Traceback (most recent call last):
+  File "C:\Users\somos\OneDrive\Documents\Quantum-Data-main\Data Dictionary\backend\app\ai\langchain_pipeline.py", line 54, in analyze_request
+    return await self.groq.generate_summary(prompt)
+                 │    │    │                └ '\n        You are an intelligent data dictionary assistant.\n        \n        Determine what the user wants:\n        SCHEM...
+                 │    │    └ <function GroqClient.generate_summary at 0x0000021AA791EE80>
+                 │    └ <app.ai.groq_client.GroqClient object at 0x0000021AA7E355E0>
+                 └ <app.ai.langchain_pipeline.LangChainPipeline object at 0x0000021AA7E35670>
 
-  File "<string>", line 1, in <module>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
-    exitcode = _main(fd, parent_sentinel)
-               │     │   └ 28
-               │     └ 3
-               └ <function _main at 0x00000199BDFCF4C0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
-    return self._bootstrap(parent_sentinel)
-           │    │          └ 28
-           │    └ <function BaseProcess._bootstrap at 0x00000199BDED3920>
-           └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
-    self.run()
-    │    └ <function BaseProcess.run at 0x00000199BDED2E80>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000199C03024E0>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-    │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-    │    └ <function subprocess_started at 0x00000199C0369940>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
-    target(sockets=sockets)
-    │              └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000199C047F4D0>>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
-    return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x00000199C0368E00>
-           │       │   └ <uvicorn.server.Server object at 0x00000199C047F4D0>
-           │       └ <function run at 0x00000199BFBB9260>
-           └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x00000199C04B44A0>
-           │      └ <function Runner.run at 0x00000199BFC72C00>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000199BFC70860>
-           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
-    self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x00000199BFC707C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
-    self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x00000199BFC725C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
-    handle._run()
-    │      └ <function Handle._run at 0x00000199BFBB47C0>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C5ADD360>()>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
-    self._context.run(self._callback, *self._args)
-    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C5ADD360>()>
-    │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C5ADD360>()>
-    │    └ <member '_context' of 'Handle' objects>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C5ADD360>()>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
-    return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
-          └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C135F4C0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C135F4C0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C135F4C0>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x00000199C5ADE6F0>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000199C3E763F0>>
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x00000199C252BF60>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x00000199C3E65BC0>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x00000199C5ADCF50>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66840>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C5AE8220>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66840>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
-    response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x00000199C5ADCF50>
-                     └ <function get_request_handler.<locals>.app at 0x00000199C3E65B20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x00000199C252A200>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'show me list of customers'}], schema={'order_items': {'columns': ...
-                 │         └ <function query at 0x00000199C3E0DD00>
-                 └ <fastapi.dependencies.models.Dependant object at 0x00000199C3E76000>
+  File "C:\Users\somos\OneDrive\Documents\Quantum-Data-main\Data Dictionary\backend\app\ai\groq_client.py", line 73, in generate_summary
+    resp.raise_for_status()
+    │    └ <function Response.raise_for_status at 0x0000021AA7678A40>
+    └ <Response [429 Too Many Requests]>
 
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 36, in query
-    pipeline.analyze_mongodb_request(req.schema, user_message)
-    │                                │   │       └ 'show me list of customers'
-    │                                │   └ {'order_items': {'columns': [{'column_name': '_id', 'data_type': 'ObjectId', 'is_nullable': 'YES'}, {'column_name': 'discount...
-    │                                └ QueryRequest(messages=[{'role': 'user', 'content': 'show me list of customers'}], schema={'order_items': {'columns': [{'colum...
-    └ <app.ai.langchain_pipeline.LangChainPipeline object at 0x00000199C5AB7C20>
+  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+          │               │                │                 └ <Response [429 Too Many Requests]>
+          │               │                └ <Request('POST', 'https://api.groq.com/openai/v1/chat/completions')>
+          │               └ "Client error '429 Too Many Requests' for url 'https://api.groq.com/openai/v1/chat/completions'\nFor more information check: ...
+          └ <class 'httpx.HTTPStatusError'>
 
-AttributeError: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
-2026-09-15 01:18:03.704 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:18:05.191 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:18:05.223 | ERROR    | app.api.routes.ai:query:80 - Error in /query: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
-Traceback (most recent call last):
-
-  File "<string>", line 1, in <module>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
-    exitcode = _main(fd, parent_sentinel)
-               │     │   └ 28
-               │     └ 3
-               └ <function _main at 0x00000199BDFCF4C0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
-    return self._bootstrap(parent_sentinel)
-           │    │          └ 28
-           │    └ <function BaseProcess._bootstrap at 0x00000199BDED3920>
-           └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
-    self.run()
-    │    └ <function BaseProcess.run at 0x00000199BDED2E80>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000199C03024E0>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-    │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-    │    └ <function subprocess_started at 0x00000199C0369940>
-    └ <SpawnProcess name='SpawnProcess-23' parent=2896 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
-    target(sockets=sockets)
-    │              └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x00000199C047F4D0>>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
-    return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=568, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x00000199C0368E00>
-           │       │   └ <uvicorn.server.Server object at 0x00000199C047F4D0>
-           │       └ <function run at 0x00000199BFBB9260>
-           └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x00000199C04B44A0>
-           │      └ <function Runner.run at 0x00000199BFC72C00>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x00000199BFC70860>
-           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x00000199BDF7CC20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
-    self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x00000199BFC707C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
-    self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x00000199BFC725C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
-    handle._run()
-    │      └ <function Handle._run at 0x00000199BFBB47C0>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C58F0A30>()>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
-    self._context.run(self._callback, *self._args)
-    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C58F0A30>()>
-    │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C58F0A30>()>
-    │    └ <member '_context' of 'Handle' objects>
-    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000199C58F0A30>()>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
-    return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x00000199BE1ED130>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x00000199C5...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
-          └ <fastapi.applications.FastAPI object at 0x00000199C3E74BF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C5AE7D80>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000199C3E77BC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C5AE7D80>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x00000199C3E779E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000199C5AE7D80>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x00000199C58F2630>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x00000199C3E77920>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x00000199C3E763F0>>
-          └ <fastapi.routing.APIRouter object at 0x00000199C3E763F0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x00000199C252BF60>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x00000199C3E65BC0>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C04A5EE0>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x00000199C58F3020>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66B60>
-          └ <function wrap_app_handling_exceptions at 0x00000199C252AAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000199C3E66840>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x00000199C3E66B60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
-    response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x00000199C58F3020>
-                     └ <function get_request_handler.<locals>.app at 0x00000199C3E65B20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x00000199C252A200>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'show me list of customers'}, {'role': 'user', 'content': 'show me...
-                 │         └ <function query at 0x00000199C3E0DD00>
-                 └ <fastapi.dependencies.models.Dependant object at 0x00000199C3E76000>
-
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 36, in query
-    pipeline.analyze_mongodb_request(req.schema, user_message)
-    │                                │   │       └ 'show me list of customers'
-    │                                │   └ {'order_items': {'columns': [{'column_name': '_id', 'data_type': 'ObjectId', 'is_nullable': 'YES'}, {'column_name': 'discount...
-    │                                └ QueryRequest(messages=[{'role': 'user', 'content': 'show me list of customers'}, {'role': 'user', 'content': 'show me list of...
-    └ <app.ai.langchain_pipeline.LangChainPipeline object at 0x00000199C5AB6E40>
-
-AttributeError: 'LangChainPipeline' object has no attribute 'analyze_mongodb_request'
-2026-09-15 01:20:10.687 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:20:25.590 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:20:27.007 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 0 tables
-2026-09-15 01:20:34.404 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:20:35.222 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:20:35.230 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:22:07.743 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:22:09.047 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:22:38.150 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:22:39.369 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:22:41.428 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:22:54.821 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:22:55.620 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:22:57.672 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:24:21.164 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:24:22.048 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:24:24.095 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:24:55.987 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:24:56.891 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 0 tables
-2026-09-15 01:25:18.654 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:25:19.484 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:25:19.490 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:25:27.799 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:25:28.669 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:25:28.676 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:26:07.873 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:26:08.713 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:26:10.748 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:28:33.506 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:28:35.094 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:28:35.097 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:28:47.666 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:28:48.454 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:28:48.457 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:29:35.930 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:29:37.315 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:29:37.319 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:31:18.928 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:31:20.013 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 0 tables
-2026-09-15 01:31:31.419 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:31:32.369 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:31:32.379 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:31:49.302 | INFO     | app.api.routes.extract:extract_with_connection:47 - Schema extraction started (mongodb)
-2026-09-15 01:31:50.122 | INFO     | app.api.routes.extract:extract_with_connection:76 - Schema extraction completed: 9 tables
-2026-09-15 01:31:50.130 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:32:27.767 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 01:32:56.678 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:09:19.534 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (postgresql)
-2026-09-15 02:09:20.092 | INFO     | app.api.routes.extract:extract_with_connection:86 - Schema extraction completed: 0 tables
-2026-09-15 02:10:09.402 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (postgresql)
-2026-09-15 02:10:10.329 | INFO     | app.api.routes.extract:extract_with_connection:86 - Schema extraction completed: 0 tables
-2026-09-15 02:10:10.339 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:10:11.892 | ERROR    | app.api.routes.ai:query:96 - Error in /query: relation "people" does not exist
-Traceback (most recent call last):
-
-  File "<string>", line 1, in <module>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
-    exitcode = _main(fd, parent_sentinel)
-               │     │   └ 348
-               │     └ 3
-               └ <function _main at 0x000002249334F4C0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
-    return self._bootstrap(parent_sentinel)
-           │    │          └ 348
-           │    └ <function BaseProcess._bootstrap at 0x0000022493253920>
-           └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
-    self.run()
-    │    └ <function BaseProcess.run at 0x0000022493252E80>
-    └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000224931B0140>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-    │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-    │    └ <function subprocess_started at 0x0000022495759940>
-    └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
-    target(sockets=sockets)
-    │              └ [<socket.socket fd=396, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x000002249584B590>>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
-    return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=396, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x0000022495758E00>
-           │       │   └ <uvicorn.server.Server object at 0x000002249584B590>
-           │       └ <function run at 0x0000022494FC9260>
-           └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x00000224958844A0>
-           │      └ <function Runner.run at 0x0000022495082C00>
-           └ <asyncio.runners.Runner object at 0x00000224933181D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000022495080860>
-           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x00000224933181D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
-    self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x00000224950807C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
-    self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x00000224950825C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
-    handle._run()
-    │      └ <function Handle._run at 0x0000022494FC47C0>
-    └ <Handle Task.task_wakeup(<Future finished result=None>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
-    self._context.run(self._callback, *self._args)
-    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
-    │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
-    │    └ <member '_context' of 'Handle' objects>
-    └ <Handle Task.task_wakeup(<Future finished result=None>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022495715850>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
-    return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x00000224991D7740>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022495715850>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000224991D7080>
-          └ <fastapi.applications.FastAPI object at 0x00000224991D7740>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000224992425C0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x000002249924FEF0>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000224991D7080>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000224992425C0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002249924FC80>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x000002249924FEF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x00000224992425C0>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x000002249924DE50>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002249924FC80>
-          └ <function wrap_app_handling_exceptions at 0x00000224978EEAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022499240AE0>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022499240AE0>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x000002249924CE60>>
-          └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022499240AE0>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x00000224978EFF60>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022499240AE0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x0000022499241EE0>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x0000022499240AE0>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x0000022499268B60>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x0000022499240A40>
-          └ <function wrap_app_handling_exceptions at 0x00000224978EEAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249934BEC0>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x0000022499240A40>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
-    response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x0000022499268B60>
-                     └ <function get_request_handler.<locals>.app at 0x0000022499241E40>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x00000224978EE200>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'name the guy with this location 8790 Cobblestone Street'}], schem...
-                 │         └ <function query at 0x00000224991EE020>
-                 └ <fastapi.dependencies.models.Dependant object at 0x000002249924E480>
-
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 90, in query
-    result["results"] = await connector.execute_sql(result.get("sql") or "")
-    │                         │         │           │      └ <method 'get' of 'dict' objects>
-    │                         │         │           └ {'intent': 'QUERY', 'sql': "SELECT name FROM people WHERE address = '8790 Cobblestone Street';", 'response': 'Here is the nam...
-    │                         │         └ <function PostgresConnector.execute_sql at 0x000002249934B060>
-    │                         └ <app.connectors.postgresql.PostgresConnector object at 0x00000224996F2780>
-    └ {'intent': 'QUERY', 'sql': "SELECT name FROM people WHERE address = '8790 Cobblestone Street';", 'response': 'Here is the nam...
-
-  File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\connectors\postgresql.py", line 68, in execute_sql
-    rows = await conn.fetch(sql)
-                 │    │     └ "SELECT name FROM people WHERE address = '8790 Cobblestone Street';"
-                 │    └ <function Connection.fetch at 0x0000022499348180>
-                 └ <PoolConnectionProxy [released] 0x224996f35e0>
-
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 691, in fetch
-    return await self._execute(
-                 │    └ <function Connection._execute at 0x0000022499334B80>
-                 └ <asyncpg.connection.Connection object at 0x000002249937B3E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
-    result, _ = await self.__execute(
-                      └ <asyncpg.connection.Connection object at 0x000002249937B3E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
-    result, stmt = await self._do_execute(
-                         │    └ <function Connection._do_execute at 0x0000022499334FE0>
-                         └ <asyncpg.connection.Connection object at 0x000002249937B3E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
-    stmt = await self._get_statement(
-                 │    └ <function Connection._get_statement at 0x0000022499322DE0>
-                 └ <asyncpg.connection.Connection object at 0x000002249937B3E0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
-    statement = await self._protocol.prepare(
-                      │    └ <member '_protocol' of 'Connection' objects>
-                      └ <asyncpg.connection.Connection object at 0x000002249937B3E0>
-  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
-    return await waiter
-
-asyncpg.exceptions.UndefinedTableError: relation "people" does not exist
-2026-09-15 02:10:27.890 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (postgresql)
-2026-09-15 02:10:28.492 | INFO     | app.api.routes.extract:extract_with_connection:86 - Schema extraction completed: 0 tables
-2026-09-15 02:10:28.499 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:10:30.001 | ERROR    | app.api.routes.ai:query:96 - Error in /query: relation "customers" does not exist
-Traceback (most recent call last):
-
-  File "<string>", line 1, in <module>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
-    exitcode = _main(fd, parent_sentinel)
-               │     │   └ 348
-               │     └ 3
-               └ <function _main at 0x000002249334F4C0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
-    return self._bootstrap(parent_sentinel)
-           │    │          └ 348
-           │    └ <function BaseProcess._bootstrap at 0x0000022493253920>
-           └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
-    self.run()
-    │    └ <function BaseProcess.run at 0x0000022493252E80>
-    └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000224931B0140>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-    │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-    │    └ <function subprocess_started at 0x0000022495759940>
-    └ <SpawnProcess name='SpawnProcess-1' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
-    target(sockets=sockets)
-    │              └ [<socket.socket fd=396, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x000002249584B590>>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
-    return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=396, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x0000022495758E00>
-           │       │   └ <uvicorn.server.Server object at 0x000002249584B590>
-           │       └ <function run at 0x0000022494FC9260>
-           └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x00000224958844A0>
-           │      └ <function Runner.run at 0x0000022495082C00>
-           └ <asyncio.runners.Runner object at 0x00000224933181D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000022495080860>
-           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x00000224933181D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
-    self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x00000224950807C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
-    self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x00000224950825C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
-    handle._run()
-    │      └ <function Handle._run at 0x0000022494FC47C0>
-    └ <Handle Task.task_wakeup(<Future finished result=None>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
-    self._context.run(self._callback, *self._args)
-    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
-    │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
-    │    └ <member '_context' of 'Handle' objects>
-    └ <Handle Task.task_wakeup(<Future finished result=None>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022495715850>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
-    return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x00000224991D7740>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x0000022495715850>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022499...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000224991D7080>
-          └ <fastapi.applications.FastAPI object at 0x00000224991D7740>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000022499709B20>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x000002249924FEF0>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x00000224991D7080>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000022499709B20>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002249924FC80>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x000002249924FEF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x0000022499709B20>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x00000224997193A0>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000002249924FC80>
-          └ <function wrap_app_handling_exceptions at 0x00000224978EEAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249970BE20>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249970BE20>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x000002249924CE60>>
-          └ <fastapi.routing.APIRouter object at 0x000002249924CE60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249970BE20>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x00000224978EFF60>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249970BE20>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x0000022499241EE0>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000002249970BE20>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x00000224997196D0>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x000002249970BF60>
-          └ <function wrap_app_handling_exceptions at 0x00000224978EEAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x00000224998A0040>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000022...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x000002249970BF60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
-    response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x00000224997196D0>
-                     └ <function get_request_handler.<locals>.app at 0x0000022499241E40>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x00000224978EE200>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'name the guy with this location 8790 Cobblestone Street'}, {'role...
-                 │         └ <function query at 0x00000224991EE020>
-                 └ <fastapi.dependencies.models.Dependant object at 0x000002249924E480>
-
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 90, in query
-    result["results"] = await connector.execute_sql(result.get("sql") or "")
-    │                         │         │           │      └ <method 'get' of 'dict' objects>
-    │                         │         │           └ {'intent': 'QUERY', 'sql': 'SELECT * FROM customers;', 'response': 'Here is the list of customers.'}
-    │                         │         └ <function PostgresConnector.execute_sql at 0x000002249934B060>
-    │                         └ <app.connectors.postgresql.PostgresConnector object at 0x00000224998B1CA0>
-    └ {'intent': 'QUERY', 'sql': 'SELECT * FROM customers;', 'response': 'Here is the list of customers.'}
-
-  File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\connectors\postgresql.py", line 68, in execute_sql
-    rows = await conn.fetch(sql)
-                 │    │     └ 'SELECT * FROM customers;'
-                 │    └ <function Connection.fetch at 0x0000022499348180>
-                 └ <PoolConnectionProxy [released] 0x2249924df90>
-
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 691, in fetch
-    return await self._execute(
-                 │    └ <function Connection._execute at 0x0000022499334B80>
-                 └ <asyncpg.connection.Connection object at 0x00000224998AFF20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1794, in _execute
-    result, _ = await self.__execute(
-                      └ <asyncpg.connection.Connection object at 0x00000224998AFF20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1892, in __execute
-    result, stmt = await self._do_execute(
-                         │    └ <function Connection._do_execute at 0x0000022499334FE0>
-                         └ <asyncpg.connection.Connection object at 0x00000224998AFF20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 1925, in _do_execute
-    stmt = await self._get_statement(
-                 │    └ <function Connection._get_statement at 0x0000022499322DE0>
-                 └ <asyncpg.connection.Connection object at 0x00000224998AFF20>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncpg\connection.py", line 433, in _get_statement
-    statement = await self._protocol.prepare(
-                      │    └ <member '_protocol' of 'Connection' objects>
-                      └ <asyncpg.connection.Connection object at 0x00000224998AFF20>
-  File "asyncpg\protocol\protocol.pyx", line 166, in prepare
-    return await waiter
-
-asyncpg.exceptions.UndefinedTableError: relation "customers" does not exist
-2026-09-15 02:10:45.892 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:20:19.085 | INFO     | app.api.routes.extract:extract_with_connection:48 - Schema extraction started (postgresql)
-2026-09-15 02:20:19.243 | ERROR    | app.api.routes.extract:extract_with_connection:84 - Connector error: password authentication failed for user "postgres"
-2026-09-15 02:20:24.009 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:20:24.600 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:20:36.121 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:20:37.060 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:20:37.092 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:20:39.106 | ERROR    | app.api.routes.ai:query:96 - Error in /query: Only SELECT queries are allowed
-Traceback (most recent call last):
-
-  File "<string>", line 1, in <module>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 122, in spawn_main
-    exitcode = _main(fd, parent_sentinel)
-               │     │   └ 344
-               │     └ 3
-               └ <function _main at 0x0000019859A6F4C0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\spawn.py", line 135, in _main
-    return self._bootstrap(parent_sentinel)
-           │    │          └ 344
-           │    └ <function BaseProcess._bootstrap at 0x0000019859973920>
-           └ <SpawnProcess name='SpawnProcess-7' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 314, in _bootstrap
-    self.run()
-    │    └ <function BaseProcess.run at 0x0000019859972E80>
-    └ <SpawnProcess name='SpawnProcess-7' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x00000198598D0140>, 'target': <bound method Server.run of <uvicorn.server.Server...
-    │    │        │    │        └ <SpawnProcess name='SpawnProcess-7' parent=2784 started>
-    │    │        │    └ ()
-    │    │        └ <SpawnProcess name='SpawnProcess-7' parent=2784 started>
-    │    └ <function subprocess_started at 0x000001985BDF9940>
-    └ <SpawnProcess name='SpawnProcess-7' parent=2784 started>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\_subprocess.py", line 78, in subprocess_started
-    target(sockets=sockets)
-    │              └ [<socket.socket fd=460, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-    └ <bound method Server.run of <uvicorn.server.Server object at 0x000001985BEEB590>>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\server.py", line 65, in run
-    return asyncio.run(self.serve(sockets=sockets))
-           │       │   │    │             └ [<socket.socket fd=460, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>]
-           │       │   │    └ <function Server.serve at 0x000001985BDF8E00>
-           │       │   └ <uvicorn.server.Server object at 0x000001985BEEB590>
-           │       └ <function run at 0x000001985A049260>
-           └ <module 'asyncio' from 'C:\\Users\\somos\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\asyncio\\__init__.py'>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           │      │   └ <coroutine object Server.serve at 0x000001985BF244A0>
-           │      └ <function Runner.run at 0x000001985B722C00>
-           └ <asyncio.runners.Runner object at 0x0000019859A381D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           │    │     │                  └ <Task pending name='Task-1' coro=<Server.serve() running at C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-p...
-           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001985B720860>
-           │    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-           └ <asyncio.runners.Runner object at 0x0000019859A381D0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 674, in run_until_complete
-    self.run_forever()
-    │    └ <function BaseEventLoop.run_forever at 0x000001985B7207C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 641, in run_forever
-    self._run_once()
-    │    └ <function BaseEventLoop._run_once at 0x000001985B7225C0>
-    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1987, in _run_once
-    handle._run()
-    │      └ <function Handle._run at 0x000001985A0447C0>
-    └ <Handle Task.task_wakeup(<_GatheringFu...e, None, ...]>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
-    self._context.run(self._callback, *self._args)
-    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
-    │    │            │    │           └ <Handle Task.task_wakeup(<_GatheringFu...e, None, ...]>)>
-    │    │            │    └ <member '_callback' of 'Handle' objects>
-    │    │            └ <Handle Task.task_wakeup(<_GatheringFu...e, None, ...]>)>
-    │    └ <member '_context' of 'Handle' objects>
-    └ <Handle Task.task_wakeup(<_GatheringFu...e, None, ...]>)>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 411, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000001985F3918B0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
-    return await self.app(scope, receive, send)
-                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x000001985F...
-                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-                 │    └ <fastapi.applications.FastAPI object at 0x000001985F830B00>
-                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000001985F3918B0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x000001985F...
-                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x000001985F...
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000001985F85FFB0>
-          └ <fastapi.applications.FastAPI object at 0x000001985F830B00>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000001985F8527A0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.cors.CORSMiddleware object at 0x000001985F85FE60>
-          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000001985F85FFB0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\cors.py", line 85, in __call__
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000001985F8527A0>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000001985F85D1F0>
-          └ <starlette.middleware.cors.CORSMiddleware object at 0x000001985F85FE60>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-          │                            │    │    │     │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000001985F8527A0>
-          │                            │    │    │     │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │    │     └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    │    └ <starlette.requests.Request object at 0x000001985F85EC90>
-          │                            │    └ <fastapi.routing.APIRouter object at 0x000001985F85CEF0>
-          │                            └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x000001985F85D1F0>
-          └ <function wrap_app_handling_exceptions at 0x000001985DF5EAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F852660>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <fastapi.routing.APIRouter object at 0x000001985F85CEF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-          │    │                │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F852660>
-          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <bound method Router.app of <fastapi.routing.APIRouter object at 0x000001985F85CEF0>>
-          └ <fastapi.routing.APIRouter object at 0x000001985F85CEF0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-          │     │      │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F852660>
-          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │     └ <function Route.handle at 0x000001985DF5FF60>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-          │    │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F852660>
-          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │    └ <function request_response.<locals>.app at 0x000001985F851E40>
-          └ APIRoute(path='/api/ai/query', name='query', methods=['POST'])
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-          │                            │    │        │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F852660>
-          │                            │    │        │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │                            │    │        └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          │                            │    └ <starlette.requests.Request object at 0x000001985F832A80>
-          │                            └ <function request_response.<locals>.app.<locals>.app at 0x000001985F852700>
-          └ <function wrap_app_handling_exceptions at 0x000001985DF5EAC0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-          │   │      │        └ <function wrap_app_handling_exceptions.<locals>.wrapped_app.<locals>.sender at 0x000001985F95B380>
-          │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.httptools_impl.RequestResponseCycle object at 0x0000019...
-          │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.4'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
-          └ <function request_response.<locals>.app.<locals>.app at 0x000001985F852700>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 72, in app
-    response = await func(request)
-                     │    └ <starlette.requests.Request object at 0x000001985F832A80>
-                     └ <function get_request_handler.<locals>.app at 0x000001985F851DA0>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-                         └ <function run_endpoint_function at 0x000001985DF5E200>
-  File "C:\Users\somos\AppData\Local\Programs\Python\Python312\Lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-                 │         │      └ {'req': QueryRequest(messages=[{'role': 'user', 'content': 'show me list of customers'}], schema={}, db_type='postgresql', da...
-                 │         └ <function query at 0x000001985F7FE0C0>
-                 └ <fastapi.dependencies.models.Dependant object at 0x000001985F85E5A0>
-
-> File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\api\routes\ai.py", line 90, in query
-    result["results"] = await connector.execute_sql(result.get("sql") or "")
-    │                         │         │           │      └ <method 'get' of 'dict' objects>
-    │                         │         │           └ {'intent': 'QUERY', 'sql': None, 'response': 'I need the database schema (table and column names) to generate a SELECT query ...
-    │                         │         └ <function PostgresConnector.execute_sql at 0x000001985F95AFC0>
-    │                         └ <app.connectors.postgresql.PostgresConnector object at 0x000001985F95E150>
-    └ {'intent': 'QUERY', 'sql': None, 'response': 'I need the database schema (table and column names) to generate a SELECT query ...
-
-  File "C:\Users\somos\Downloads\Quantum-Data-main\Data Dictionary\backend\app\connectors\postgresql.py", line 67, in execute_sql
-    raise ConnectorError("Only SELECT queries are allowed")
-          └ <class 'app.core.errors.ConnectorError'>
-
-app.core.errors.ConnectorError: Only SELECT queries are allowed
-2026-09-15 02:21:19.860 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:22:45.480 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:22:46.274 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:22:55.085 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:22:56.056 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:22:56.064 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:24:57.505 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:24:58.039 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:25:09.461 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:25:10.044 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 02:25:10.052 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:29:28.927 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:29:29.675 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:29:38.403 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:29:39.279 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:29:39.290 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:30:05.273 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:30:06.367 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:30:06.376 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:30:32.321 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:30:33.415 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:30:33.425 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:31:10.082 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:31:10.907 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:31:10.917 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:31:22.020 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 02:31:22.919 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 02:31:22.926 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:57:10.841 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:57:38.320 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:57:50.745 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 02:58:02.155 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:01:40.291 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:01:43.604 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:01:43.610 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:01:45.527 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:02:23.232 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:02:24.354 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:02:24.357 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:02:27.257 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:02:37.876 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:02:38.809 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:02:38.814 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:02:41.038 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:08:43.564 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:08:44.696 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:08:44.701 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:08:46.474 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:08:57.671 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:08:59.214 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:08:59.219 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:09:01.649 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:10:00.371 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:10:03.050 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:10:03.056 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:10:04.855 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:11:01.251 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-15 03:11:03.007 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:11:03.012 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:11:05.594 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:12:51.354 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:12:51.530 | ERROR    | app.api.routes.extract:extract_with_connection:85 - Connector error: password authentication failed for user "postgres"
-2026-09-15 03:12:56.638 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:12:57.535 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 03:13:45.263 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:13:46.953 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-15 03:13:46.973 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:14:04.807 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:14:05.857 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:14:12.114 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:14:13.304 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:14:13.314 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-15 03:14:29.361 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (postgresql)
-2026-09-15 03:14:30.475 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-15 03:14:30.487 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
-2026-09-16 12:55:38.739 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-16 12:55:43.534 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 0 tables
-2026-09-16 12:57:20.204 | INFO     | app.api.routes.extract:extract_with_connection:49 - Schema extraction started (mongodb)
-2026-09-16 12:57:21.359 | INFO     | app.api.routes.extract:extract_with_connection:82 - Schema extraction completed: 9 tables
-2026-09-16 12:57:21.385 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-10-12 19:27:10.865 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:28:04.368 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:28:44.029 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 19:37:38.522 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 20:15:05.896 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 20:16:05.907 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 20:18:05.824 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 20:24:03.290 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 20:55:23.371 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 21:02:35.373 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 21:31:47.527 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 21:32:10.961 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called
+2026-10-12 21:32:27.578 | DEBUG    | app.ai.groq_client:generate_summary:14 - GroqClient.generate_summary called

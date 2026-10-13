@@ -14,12 +14,21 @@ public class DBService {
     this.providers = providers;
   }
 
-  public Connection connect(DBConnectionConfig config) throws Exception {
+  public AutoCloseable connect(DBConnectionConfig config) throws Exception {
     return providers.stream()
         .filter(p -> p.supports(config.getType()))
         .findFirst()
         .orElseThrow(
             () -> new IllegalArgumentException("Unsupported database: " + config.getType()))
         .connect(config);
+  }
+
+  public Connection connectJdbc(DBConnectionConfig config) throws Exception {
+    AutoCloseable connection = connect(config);
+    if (connection instanceof Connection jdbcConnection) {
+      return jdbcConnection;
+    }
+    connection.close();
+    throw new IllegalArgumentException("Database is not a JDBC provider: " + config.getType());
   }
 }

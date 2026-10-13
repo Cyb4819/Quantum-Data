@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+import httpx
 from pydantic import BaseModel
 from typing import Any, Optional
 import json
@@ -13,6 +14,7 @@ class QueryRequest(BaseModel):
     messages: list[dict]
     schema: Any
     db_type: Optional[str] = None
+    execute_query: bool = True
     database: Optional[str] = None
     host: Optional[str] = None
     port: Optional[int] = None
@@ -23,6 +25,8 @@ class QueryRequest(BaseModel):
 @router.post("/query")
 async def query(req: QueryRequest):
     try:
+        schema = _normalize_schema(req.schema)
+
         user_message = next(
             (
                 msg.get("content")
@@ -35,6 +39,15 @@ async def query(req: QueryRequest):
         if not user_message:
             raise HTTPException(status_code=400, detail="No user message found")
 
+        if req.db_type == "postgresql" and not schema:
+            raise HTTPException(
+                status_code=400,
+                detail=(
+                    "No PostgreSQL tables were found in the extracted schema. "
+                    "Check the selected database and the connected user's table permissions."
+                ),
+            )
+
         conversation = "\n".join(
             f"{msg.get('role', 'user')}: {msg.get('content', '')}"
             for msg in req.messages
@@ -43,11 +56,11 @@ async def query(req: QueryRequest):
 
         pipeline = LangChainPipeline()
         result = await (
-            pipeline.analyze_mongodb_request(req.schema, conversation)
+            pipeline.analyze_mongodb_request(schema, conversation)
             if req.db_type == "mongodb"
-            else pipeline.analyze_postgresql_request(req.schema, conversation)
+            else pipeline.analyze_postgresql_request(schema, conversation)
             if req.db_type == "postgresql"
-            else pipeline.analyze_request(req.schema, conversation)
+            else pipeline.analyze_request(schema, conversation)
         )
 
         if isinstance(result, str) and result.startswith("[LOCAL STUB"):
@@ -68,19 +81,19 @@ async def query(req: QueryRequest):
         except (json.JSONDecodeError, TypeError):
             raise HTTPException(status_code=400, detail="LLM returned invalid JSON")
 
-        if req.db_type == "mongodb" and result.get("intent") in {"QUERY", "MIXED"}:
-            collection = _find_collection(result.get("collection"), req.schema, user_message)
+        if req.execute_query and req.db_type == "mongodb" and result.get("intent") in {"QUERY", "MIXED"}:
+            collection = _find_collection(result.get("collection"), schema, user_message)
             email = re.search(r"[\w.+-]+@[\w-]+\.[\w.-]+", conversation)
             if email:
                 customer_collection = next(
-                    (name for name in req.schema if name.lower() == "customers"),
+                    (name for name in schema if name.lower() == "customers"),
                     None,
                 )
                 if customer_collection:
                     collection = customer_collection
             if email and re.search(r"\b(where|address|stay|lives?)\b", user_message, re.I):
                 customer_collection = next(
-                    (name for name in req.schema if name.lower() == "customers"),
+                    (name for name in schema if name.lower() == "customers"),
                     None,
                 )
                 if customer_collection:
@@ -105,13 +118,13 @@ async def query(req: QueryRequest):
                 query_filter=query_filter,
                 projection=result.get("projection"),
             )
-        elif req.db_type == "postgresql" and result.get("intent") in {"QUERY", "MIXED"}:
+        elif req.execute_query and req.db_type == "postgresql" and result.get("intent") in {"QUERY", "MIXED"}:
             from app.connectors.postgresql import PostgresConnector
 
             connector = PostgresConnector(dsn=_postgres_dsn(req))
             await connector.connect()
             if not result.get("sql"):
-                result["sql"] = _fallback_postgres_sql(req.schema, user_message)
+                result["sql"] = _fallback_postgres_sql(schema, user_message)
             result["results"] = await connector.execute_sql(
                 _normalize_postgres_sql(result.get("sql"))
             )
@@ -119,9 +132,48 @@ async def query(req: QueryRequest):
 
     except HTTPException:
         raise
+    except httpx.HTTPStatusError as e:
+        if e.response.status_code == 429:
+            raise HTTPException(
+                status_code=429,
+                detail="AI provider rate limit reached. Please wait and try again.",
+            ) from e
+        logger.exception("AI provider returned an HTTP error")
+        raise HTTPException(
+            status_code=502, detail="AI provider request failed."
+        ) from e
     except Exception as e:
         logger.exception(f"Error in /query: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+def _normalize_schema(schema: Any) -> dict:
+    if isinstance(schema, dict):
+        if "tablesList" not in schema:
+            return schema
+        sources = [schema]
+    elif isinstance(schema, list):
+        sources = schema
+    else:
+        return {}
+
+    normalized = {}
+    for source in sources:
+        if not isinstance(source, dict):
+            continue
+
+        tables = source.get("tablesList")
+        if not isinstance(tables, list):
+            tables = [source] if source.get("tableName") else []
+
+        for table in tables:
+            if not isinstance(table, dict):
+                continue
+            name = table.get("tableName")
+            if isinstance(name, str) and name:
+                normalized[name] = table
+
+    return normalized
 
 
 def _find_collection(candidate: Any, schema: Any, message: str) -> Optional[str]:
